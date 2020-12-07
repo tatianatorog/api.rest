@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:false}))
 
 //router
 app.use(require('./routes/index'))
-app.use(require ('./routes/movies'))
+app.use('/api/movies',require ('./routes/movies'))
 
 
 // send "string"
