@@ -17,9 +17,9 @@ app.use(express.urlencoded({extended:false}))
 // to read info from forms
 
 //router
-app.use(require('./routes/index'))
-app.use('/api/movies',require ('./routes/movies'))
-
+app.use(require('./routes/index'));
+app.use('/api/movies',require ('./routes/movies'));
+app.use('/api/movies',require ('./routes/users'));
 
 // send "string"
 
